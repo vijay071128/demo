@@ -1,0 +1,76 @@
+/* ...existing code... */
+/* About Section Styles */
+.about-section {
+  padding: 2rem 1rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form-box {
+  min-width: 140px;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.search-btn-form {
+  padding: 0.7rem 2rem;
+  background: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn-form:hover {
+  background: #e67600;
+  transform: scale(1.08) translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Responsive Styles */
+@media (max-width: 1920px) {
+  .search-form { max-width: 1200px; }
+}
+@media (max-width: 1200px) {
+  .search-form { max-width: 1020px; }
+}
+@media (max-width: 1020px) {
+  .search-form { max-width: 780px; }
+}
+@media (max-width: 780px) {
+  .search-form { max-width: 600px; }
+}
+@media (max-width: 600px) {
+  .search-form { max-width: 480px; flex-direction: column; }
+  .form-box, .search-btn-form { width: 100%; }
+}
+@media (max-width: 480px) {
+  .about-title { font-size: 1.3rem; }
+  .search-form { max-width: 320px; }
+}
+@media (max-width: 320px) {
+  .about-title { font-size: 1rem; }
+  .search-form { max-width: 180px; }
+}

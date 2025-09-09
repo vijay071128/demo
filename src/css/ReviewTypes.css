@@ -1,0 +1,117 @@
+/* Review Types Section Styles */
+.review-types-section {
+  width: 100vw;
+  background: #181818;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 60px 0;
+}
+
+.review-types-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.review-type-card {
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 20px 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.review-type-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(255,140,0,0.18);
+}
+.review-type-img-wrapper {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.review-type-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1);
+}
+.review-type-card:hover .review-type-img {
+  transform: scale(1.08) rotate(-2deg);
+}
+.review-type-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #ff8c00;
+  letter-spacing: 1px;
+}
+.review-type-btn {
+  padding: 0.6rem 1.6rem;
+  background: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(255,140,0,0.10);
+}
+.review-type-btn:hover {
+  background: #e67600;
+  transform: scale(1.08) translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255,140,0,0.18);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .review-types-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .review-type-card {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 18px 8px 16px 8px;
+  }
+}
+@media (max-width: 600px) {
+  .review-types-section {
+    padding: 20px 0 30px 0;
+  }
+  .review-types-container {
+    gap: 1rem;
+  }
+  .review-type-card {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 12px 4px 10px 4px;
+  }
+  .review-type-label {
+    font-size: 1.05rem;
+  }
+  .review-type-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
+  }
+}
